@@ -4,55 +4,55 @@
          "SNO": "1",
          "BookTitle": "SQL Server 2016 Developer's Guide: Build efficient database applications for your organization with SQL Server 2016",
          "Subject": "Database",
-         "Authors": "Dejan Sarka (Author), Milos Radivojevic (Author), William Durkin  (Author)"
+         "Authors": "Dejan Sarka (Author), Milos Radivojevic (Author), William Durkin  (Author)",
 		 "Cost":"37.7",
          "ISBN-10": "1786465345",
          "PrintLength": "616",
-         "FormatType": "Paperback"
+         "FormatType": "Paperback",
 		 "Publisher": "Packt Publishing (March 22, 2017)"
       },
       {
          "SNO": "2",
          "BookTitle": "SQL Server 2016 Developer's Guide: Build efficient database applications for your organization with SQL Server 2016",
          "Subject": "Database",
-         "Authors": "Dejan Sarka (Author), Milos Radivojevic (Author), William Durkin  (Author)"
+         "Authors": "Dejan Sarka (Author), Milos Radivojevic (Author), William Durkin  (Author)",
 		 "Cost": "56",
          "ISBN-10": "1786465345",
          "PrintLength": "616",
-         "FormatType": "Paperback"
+         "FormatType": "Paperback",
 		 "Publisher": "Packt Publishing (March 22, 2017)"
       },
 	  {
          "SNO": "3",
          "BookTitle": "North and South (Wordsworth Classics) 2nd Revised ed. Edition",
          "Subject": "Classic Literature",
-         "Authors": "Elizabeth Gaskell"
+         "Authors": "Elizabeth Gaskell",
 		 "Cost": "3.95",
          "ISBN-10": "1853260932",
          "PrintLength": "448",
-         "FormatType": "Paperback"
+         "FormatType": "Paperback",
 		 "Publisher": "Wordsworth Editions; 2nd Revised ed. edition (April 1, 1998)"
       },
 		{
          "SNO": "4",
          "BookTitle": "Fashion in Detail: World Dress (paperback)",
          "Subject": "Fashion",
-         "Authors": "Rosemary Crill, Jennifer Wearden and Verity Wilson"
+         "Authors": "Rosemary Crill, Jennifer Wearden and Verity Wilson",
 		 "Cost": "25.1",
          "ISBN-10": "1851775684",
          "PrintLength": "616",
-         "FormatType": "Paperback"
+         "FormatType": "Paperback",
 		 "Publisher": "V &amp; A Publishing; 1st edition (April 1, 2009)"
       },
 	  {
          "SNO": "5",
          "BookTitle": "Pride and Prejudice",
          "Subject": "Classic Literature",
-         "Authors": "Jane Auston"
+         "Authors": "Jane Auston",
 		 "Cost": "9.45",
          "ISBN-10": "1503290565",
          "PrintLength": "226",
-         "FormatType": "Paperback"
+         "FormatType": "Paperback",
 		 "Publisher": "CreateSpace Independent Publishing Platform (November 6, 2018)"
       }
    ]
