@@ -1,0 +1,65 @@
+---
+title: "Week7New"
+author: "Banu Boopalan"
+date: "10/13/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+#Install Downloader
+library(downloader)
+library(stringr)
+#Install Reshape pacakge 
+#Start building data needed to calculate final average prechess rating
+library(reshape)
+library(tibble)
+library(dplyr)
+library(knitr)
+#Install KableExtra package and use that
+library(kableExtra)
+library(dplyr)
+library(rvest)
+library("XML")
+library("methods")
+library(RCurl)
+library(RJSONIO)
+```
+
+## I created my file for html manually and reading it in as an HTML file.
+
+
+```{r}
+myurl <- "https://raw.githubusercontent.com/BanuB/Week7Assignment/master/Books2.html"
+html<-tbl_df(as.data.frame(read_html(myurl) %>% html_table(header = NA, trim=TRUE, fill=TRUE)))
+html %>% kable() %>% kable_styling() %>% scroll_box(width = "910px")
+```
+
+## Created and read in an XML file
+
+
+
+```{r}
+myXML <- getURL("https://raw.githubusercontent.com/BanuB/Week7Assignment/master/BooksXML2.xml")
+xmlData<-xmlToDataFrame(myXML)
+xmlData %>% kable() %>% kable_styling() %>% scroll_box(width = "910px")
+```
+
+## Reading in a json file
+
+
+
+```{r}
+myjson<-fromJSON(content = "https://raw.githubusercontent.com/BanuB/Week7Assignment/master/Booksjson.JSON")
+myjsontb<-do.call("cbind", lapply(myjson[[1]], data.frame, stringsAsFactors = FALSE))
+s <- t(myjsontb)
+s %>% kable() %>% kable_styling() %>% scroll_box(width = "910px")
+
+str(xmlData)
+str(html)
+str(s)
+
+```
+
+## 
+For the HTML file creation, I manually created the file, For XML, manually created a file as well. For XML the & in the attribute value caused an error so I had to resubmit the equivalent &amp; . JSON file was created but I had to use like lapply and transpose steps to show the information in a dataframe format. The HTML and XML seem to similar in structure. For JSON, we were reading in a list and then I  perform cbind and then transpose to get it in the similar structure as the HTML and XML files.
